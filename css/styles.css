@@ -17,6 +17,7 @@
     --color-border-header: #ECECEC;
     --examples-work-gap: 30px;
     --examples-item-bordcolor: #EEEEEE;
+    --icon-fill:#AFB1B8;
 }
 .visualli-hiden {
     position: absolute;
@@ -178,7 +179,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
 
  .icon-comp {
     display: block;
-    fill: #757575;
+    fill: var(--secondari-text-col);
  }
  
 .icon-comp {
@@ -201,7 +202,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
 .hiro {
     background-color: var(--secondari-background-color);
 
-    background-image: linear-gradient(to right,var(--hiro-color-grad),var(--hiro-color-grad)), url(/images/hiro.jpg);
+    background-image: linear-gradient(to right,var(--hiro-color-grad),var(--hiro-color-grad)), url(./images/hiro.jpg);
     background-size: cover ;
     background-position:center;
     background-repeat: no-repeat;
@@ -279,7 +280,7 @@ background-color: var(--button-hov-foc);
     padding: 0;
     border-radius: 50%;
     color: var(--primari-background-color);
-    fill: #AFB1B8;
+    fill: var(--icon-fill);
     width: 44px;
     height: 44px;
     align-items: center;
@@ -426,8 +427,8 @@ background-color: var(--button-hov-foc);
     justify-content: center;
     width: 170px;
     height: 92px;
-    color: #AFB1B8;
-    border: 1px solid #AFB1B8;
+    color:var(--icon-fill);
+    border: 1px solid var(--icon-fill);
     border-radius: 4px;
 }
 .icon-item:hover,
