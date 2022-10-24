@@ -202,7 +202,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
 .hiro {
     background-color: var(--secondari-background-color);
 
-    background-image: linear-gradient(to right,var(--hiro-color-grad),var(--hiro-color-grad)), url(./images/hiro.jpg);
+    background-image: linear-gradient(to right,var(--hiro-color-grad),var(--hiro-color-grad)), url(../images/hiro.jpg);
     background-size: cover ;
     background-position:center;
     background-repeat: no-repeat;
