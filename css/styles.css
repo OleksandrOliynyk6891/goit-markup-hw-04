@@ -18,6 +18,7 @@
     --examples-work-gap: 30px;
     --examples-item-bordcolor: #EEEEEE;
     --icon-fill:#AFB1B8;
+    --color-foon:#C4C4C4;
 }
 .visualli-hiden {
     position: absolute;
@@ -164,9 +165,12 @@ fill: var(--button-hov-foc);
     display: block;
    
 }
-.examples:hover
+.examples-link:hover,
+.examples-link:focus
 {
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    display: block;
+
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -200,19 +204,19 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     color: var(--tagline-color);
 }
 .hiro {
-    background-color: var(--secondari-background-color);
+    background-color: var(--color-foon);
 
     background-image: linear-gradient(to right,var(--hiro-color-grad),var(--hiro-color-grad)), url(../images/hiro.jpg);
     background-size: cover ;
     background-position:center;
     background-repeat: no-repeat;
+    text-align: center;
+
     max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 200px;
     padding-bottom: 200px;
-    text-align: center;
 
 }
 .button {
@@ -417,8 +421,11 @@ background-color: var(--button-hov-foc);
 }
 .mail-link, .tel-link {
     display: block;
-    margin-top: 9px;
+   
     color:var(--footer-link-color);
+}
+.mail-cont,.tell-cont {
+margin-top: 9px;
 }
   
 .icon-item {
@@ -438,7 +445,7 @@ background-color: var(--button-hov-foc);
     cursor: pointer;
 }
 
-.customers-item .icon-item+.icon-item {
+.customers-item .client-card+.client-card {
     margin-left: 30px;
 }
 .footer-title {
@@ -447,12 +454,12 @@ background-color: var(--button-hov-foc);
 }
  .footer-item {
     display: flex;
+    align-items: baseline;
     /* outline: solid 1px red; */
  }
  .footer-social {
     display: block;
     margin-left: 70px;
-    padding-top: 12px;
     /* outline: solid 1px rgb(230, 226, 238); */
  }
   .footer-linc {
@@ -516,7 +523,6 @@ background-color: var(--button-hov-foc);
     color: var(--botton-text-color);
     background-color: var(--hov-foc-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    padding: 6px 25px;
 }
 .examples-title {
     margin: 0;
